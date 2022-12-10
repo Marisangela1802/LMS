@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navegador-superior{
+    background-color: #b0f6f2;
+    padding: 10px;
+    width: 80%;  
+    margin: auto; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    display: inline-block;
+    padding: 10px;
+    width: 70px;
+    color: black;  
+    text-align: center;
+}
+.botao:hover{
+    background-color: #66cfca; 
+    color: white;
+}
+
+.container{
+    background-color: #e6ada6;
+    display: flex;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.navegador-esquerdo{
+    background-color: #fabfb7;
+    width: 300px;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.navegador-esquerdo a:hover{
+    color: beige;
+}
+
+.link{
+    text-decoration: none;
+    display: block;
+}
+
+.links-top10 h4{
+    padding-bottom: 10px;
+}
+
+.links-top10 a{
+    padding-bottom: 3px;
+    color: black;
+}
+
+.links-top10{
+    margin-bottom: 15px;
+}
+
+.conteudo{
+    background-color: #fabfb7;
+    width: 900px;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: 5px;
+}
+
+.galeria{
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+}
+
+.navegador-direito{
+    background-color: #fabfb7;
+    width: 300px;
+    padding: 10px;
+}
+
+.navegador-direito a{
+    display: block;
+    margin: 3px;
+    text-decoration: none;
+    text-align: justify;
+    color: black;
+}
+
+.navegador-direito a:hover{
+    color: beige;
+}
+
+.rodapé{
+    width: 80%;
+    margin: auto;
+}
+
+.rodapé h4{
+    width: 80%;  
+    margin: auto;
+}
