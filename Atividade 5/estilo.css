@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navegador{
+    height: 40px;
+    background-color: #ff7575;
+    position: relative;
+}
+
+.container{
+    display: flex;
+    
+}
+
+.menu-esquerdo{
+    width: 350px;
+    height: 800px;
+    background-color: #8dbdeb;
+    position: absolute;
+}
+
+.conteudo{
+    background-color: aqua;
+    width: 100vw;
+    margin-left: 350px;
+}
+
+.c-linha1{
+    /* background-color: #ffba7f; */
+    height: 400px;
+    display: flex;
+}
+.c-linha1 .celula1{
+    width: 50%;
+    height: 400px;
+    background-color: #ffabab;
+}
+
+.c-linha1 .celula2{
+    width: 50%;
+    height: 400px;
+    background-color: #ffdaab;
+}
+
+.c-linha2{
+    background-color: #f0c8a4;
+    height: 400px;
+    display: flex;
+}
+
+.c-linha2 .celula3{
+    background-color: #ddffab;
+    height: 400px;
+    width: 33.3%;
+}
+
+.c-linha2 .celula4{
+    background-color: #abe4ff;
+    height: 400px;
+    width: 33.3%;
+}
+
+.c-linha2 .celula5{
+    background-color: #d9abff;
+    height: 400px;
+    width: 33.3%;
+}
+
+.accordeon .section .titulo{
+    height: 40px;
+    background-color: #febeac;
+}
+
+.accordeon .section .corpo{
+    height: 240px;
+    background-color: #acdeb2;
+    padding: 0px;
+    height: 0px;
+    overflow: hidden;
+    transition: height 500ms;
+    transition-timing-function: linear;
+    transition-duration: 500ms;
+}
+
+.accordeon .section:hover .corpo{
+    height: 200px;
+}
+
+.conteudo .celula2 .imagem{
+    display: flex;
+    justify-content: center;
+}
+
+.celula2 .imagem .overlay{
+    height: 60px;
+    width: 400px;
+    bottom: 285px;
+    background-color: rgba(0, 0, 0, 6);
+    position: absolute;
+    align-items: center;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 1s transform 1s;
+}
+
+.celula2 .imagem:hover .overlay{
+    opacity: 0.5;
+    transform: scale(1);
+}
+
+.imagem .overlay:hover .span{
+    color: white;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+    .navegador{
+        flex-direction: column;
+    }
+    .menu-esquerdo{
+        height: 400px;
+        width: auto;
+        position: relative;
+    }
+    .conteudo{
+        margin-left: 0;
+        flex-direction: column;
+    }
+    .conteudo .c-linha1{
+        flex-direction: column;
+        height: 800px;
+    }
+    .conteudo .c-linha1 .celula1{
+        height: 400px;
+        width: auto;
+    }
+    .conteudo .c-linha1 .celula2{
+        height: 400px;
+        width: auto;
+    }
+    .conteudo .c-linha2{
+        flex-direction: column;
+        height: 1200px;
+    }
+    .conteudo .c-linha2 .celula3{
+        height: 400px;
+        width: auto;
+    }
+    .conteudo .c-linha2 .celula4{
+        height: 400px;
+        width: auto;
+    }
+    .conteudo .c-linha2 .celula5{
+        height: 400px;
+        width: auto;
+    }
+}
