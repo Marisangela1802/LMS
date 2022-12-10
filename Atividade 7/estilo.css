@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+}
+
+.vw{
+    display: flex;
+    justify-content: center;
+
+}
+
+.pagina{
+    width: 900px;
+    background-color: rgb(239, 227, 227);
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+
+header{
+    width: 900px;
+    height: 40px;
+    background-color: rgb(70, 184, 146);
+    position: relative;
+}
+
+header .logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 260px;
+    height: 40px;
+    border-right: 2px solid white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1{
+    color: white;
+    user-select: none;
+}
+
+header .usuario{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 150px;
+    height: 40px;
+    border-left: 2px solid white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.usuario h3{
+    color: white;
+    user-select: none;
+    text-align: center;
+}
+
+.corpo{
+    position: absolute;
+    display: flex;
+    top: 40px;
+}
+
+.corpo .grupos{
+    position: relative;
+    width: 250px;
+    height: 85vh;
+    /* margin-top: 40px; */
+    background-color: rgb(222, 220, 220);
+    left: 0;
+    overflow: scroll;
+}
+
+.grupos .grupo-do-user{
+    width: 230px;
+    height: 50px;
+    background-color: rgb(222, 220, 220);
+    border-bottom: 2px solid rgba(65, 65, 65, 0.5);
+
+    display: flex;
+    align-items: center;
+}
+
+.grupos .grupo-do-user .logo{
+    background-color: darkgray;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.grupos .grupo-do-user .nome-grupo h2.Titulo{
+    color: rgb(45, 45, 45);
+}
+
+
+.corpo .mensagens{
+    /* margin-top: auto; */
+    width: 650px;
+    height: 85vh;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+.mensagens .mensagem-grupo{
+    width: 500px;
+    height: auto;
+    background-color: rgba(70, 184, 146, 0.2);
+    border-radius: 5px;
+
+    position: absolute;
+    right: 20px;
+    margin-top: 20px;
+}
+
+.mensagens .mensagem-grupo .nome{
+    padding: 8px;
+    color: rgb(96, 96, 96);
+}
+
+
+.mensagens .mensagem-grupo .conteudo{
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    color: rgb(96, 96, 96);
+}
+
+
+
+.parte-baixo{   
+    position: absolute;
+    display: flex;
+    width: 900px;
+    height: 12vh;
+    bottom: 0px;
+    background-color: gray;
+
+}
+
+.parte-baixo .esquerda{
+    /* position: absolute; */
+    /* left: 10px; */
+    /* background-color: aqua; */
+    width: 230px;
+    height: 30px;
+    /* background-color: antiquewhite; */
+}
+.esquerda .criar-grupo{
+    position: absolute;
+    bottom: 25px;
+    background-color: white;
+    width: 150px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+}
+
+.esquerda .ok{
+    position: absolute;
+    bottom: 30px;
+    left: 180px;
+    width: 35px;
+    height: 25px;
+    background-color: darkgray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.parte-baixo .direita{
+    width: 650px;
+    height: 12vh;
+    border-left: 1px solid snow;
+}
+
+.direita .escreva{
+    position: absolute;
+    bottom: 15px;
+    width: 580px;
+    height: 60px;
+    margin-left: 10px;
+    background-color: white;
+    border: none;
+}
+
+
+
+.direita .ok1{
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: darkgray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.pagina-modal{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: none;
+}
+
+.pagina-modal.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: none;
+}
+
+.modal{
+    width: 500px;
+    height: 200px;
+    background-color: white;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+.modal input.nome{
+    position: absolute;
+    top: 20px;
+    margin: 50px;
+    width: 400px;
+    height: 30px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    
+}
+
+.modal .botao{
+    position: absolute;
+    bottom: 50px;
+    margin: auto;
+    width: 100px;
+    height: 30px;
+    background-color: darkgray;
+
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.modal span.botao h3{
+    text-align: center;
+    margin-top: 3px;
+}
