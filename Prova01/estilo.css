@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navegador{
+    background-color: rosybrown;
+    width: 25vw;
+    height: 100vh;
+    position: fixed;
+    
+}
+
+.navegador .link{
+    padding: 5%;
+    display: block;
+}
+
+.navegador .link a{
+    text-decoration: none;
+
+}
+
+.navegador .link:hover{
+    background-color: rgb(214, 182, 182);
+}
+
+.conteudo{
+    background-color: royalblue;
+    width: 75vw;
+    height: auto;
+    margin-left: 25vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2px;
+}
+
+.conteudo .imagem{
+    margin: 40px 20px 20px 10px;
+    position: relative;
+}
+
+.conteudo .imagem:hover{
+    width: 320px;
+    height: 440px;
+    background-color: black;
+    opacity: 60%;
+    transition: opacity 1s, transform 1s;
+    transform: scale(115%);
+
+}
+
+
+
+@media screen and (max-width: 576px){
+    .tudo{
+        display: block;
+    }
+    .navegador{
+        position: relative;
+        width: auto;
+        height: auto;
+    }
+
+    .navegador .link{
+        display: inline-block;
+    }
+
+    .conteudo{
+        width: auto;
+        height: auto;
+        margin-left: 0px;
+    }
+}
