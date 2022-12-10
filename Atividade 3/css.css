@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Artigo {
+    width: 1000px;
+    background-color: #f6aa93;
+    padding: 10px 30px 10px 30px;
+    margin: auto;
+    border: 2px solid #f88f79;
+    border-style: dashed;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+    
+
+}
+
+/* .geral-navegador{
+    background-color: burlywood;
+    padding: 40px 10px 10px 10px;
+    text-align: none;
+} */
+
+.menu{
+   background-color: #f5856e; 
+   display: inline-block;
+   width: 220px;
+   text-decoration: none;
+   padding: 10px 0px;
+   text-align: center;
+}
+
+.menu:hover{
+    background-color: #ed9483;
+}
+
+.dropdown{
+    display: inline-block;
+    width: 300px;
+}
+
+.dropdown-button{
+    background-color: #f5856e;
+    text-align: center;
+    width: 300px;
+    padding: 10px 0px;
+    cursor:pointer;
+}
+
+.dropdown-conteudo{
+    background-color: antiquewhite;
+    display: none;
+    text-align: center;
+    width: 300px;
+    position: absolute;
+}
+
+.dropdown-conteudo a{
+    text-decoration: none;
+    text-align: left;
+    padding: 15px;
+    display: block;
+}
+
+.dropdown-conteudo a:hover{
+    background-color: #e7a497;
+}
+
+.dropdown:hover .dropdown-button{
+    background-color: #ed9483;
+}
+
+.dropdown:hover .dropdown-conteudo{
+    display: block;
+}
+
+h1{
+    font-size: 30px;
+    padding-top: 20px;
+}
+.navegador{
+    width: 360px;
+    height: 700px;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    background-color: #f6aa93;
+}
+.botao{
+    height: 30px;
+    padding: 10px;
+}
+.botao:hover{
+    background-color: #ee997f;
+}
+.Pagina2{
+    margin-left: 400px;
+    padding: 30px 10px 10px 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+p{
+    padding-block: 5px ;
+}
+.ultimo-paragrafo{
+    padding-bottom: 0;
+}
